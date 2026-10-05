@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #222222;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.sobretitulo {
+    margin-bottom: 5px;
+    color: #28734f;
+}
+
+h1 {
+    margin-top: 0;
+    color: #245b40;
+}
+
+h2 {
+    margin: 0;
+}
+
+.botao {
+    display: inline-block;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao-principal {
+    background-color: #28734f;
+    color: white;
+}
+
+.botao-secundario,
+.botao-neutro {
+    background-color: #e5e5e5;
+    color: #222222;
+}
+
+.botao-perigo {
+    background-color: #c94444;
+    color: white;
+}
+
+.mensagem {
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.mensagem-sucesso {
+    background-color: #dff0e4;
+    color: #245b40;
+}
+
+.mensagem-erro {
+    background-color: #f8dddd;
+    color: #8a2525;
+}
+
+.secao-lista,
+.painel-formulario {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: white;
+}
+
+.cabecalho-secao {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contador,
+.descricao,
+.rodape {
+    color: #666666;
+}
+
+.tabela-responsiva {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e8eee9;
+}
+
+.acoes {
+    white-space: nowrap;
+}
+
+.acoes form {
+    display: inline;
+}
+
+.estado-vazio {
+    margin-bottom: 0;
+}
+
+.rodape {
+    margin-top: 20px;
+}
+
+.container-formulario {
+    max-width: 650px;
+}
+
+.voltar {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #28734f;
+}
+
+.painel-formulario h1 {
+    margin-bottom: 8px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.formulario input {
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    padding: 9px;
+    font-size: 15px;
+}
+
+.acoes-formulario {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .topo {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .secao-lista,
+    .painel-formulario {
+        padding: 14px;
+    }
+}
